@@ -10,8 +10,9 @@ alert(`Hola ${nombre_apellido}`);
 
 //Suma de Numeros 
 
-let n1 = 2 ;
-let n2 = 3 ;
+let n1 = parseInt(prompt('Ingrese un numero'));
+let n2 = parseInt(prompt('Ingrese otro numero'));
+
 
 let r = n1 + n2 ;
 
