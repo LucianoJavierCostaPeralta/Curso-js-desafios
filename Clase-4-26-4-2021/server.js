@@ -1,20 +1,18 @@
-//Function constante flecha
 //Constante
 const NOTA_APROBATORIA = 6;
 const NOTA_COMPLICADA = 5;
-
+const CANTIDAD_NOTAS = parseInt(
+  prompt(
+    "Ingrese el numero de calificaciones a evaluar . Recuerde que la calificacion a ingresar debe estar em el rango de 0 a 10"
+  )
+);
 //Lets
 let nota,
   aprobados = 0,
   desaprobados = 0,
   complicados = 0;
 
-const CANTIDAD_NOTAS = parseInt(
-  prompt(
-    "Ingrese el numero de calificaciones a evaluar . Recuerde que la calificacion a ingresar debe estar em el rango de 0 a 10"
-  )
-);
-
+//Function constante flecha
 const condicional = () => {
   if (nota >= NOTA_APROBATORIA) {
     aprobados++;
