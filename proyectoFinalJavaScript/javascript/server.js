@@ -1,8 +1,10 @@
 //Declarando constantes
 const VALOR_NUMERO_RANDOM = 1000000000,
-  arrayProductos = [];
+arrayProductos = [];
 
-let arrayOrdenarProductoPorPrecio = [];
+// Declarando lets
+let arrayOrdenarProductoPorPrecio = [] ,
+nombre , apellido ;
 
 //Clase Producto
 class Producto {
@@ -64,9 +66,10 @@ arrayProductos.push(new Producto("Mate + Bombilla", 1800));
 
 //Imprecion del contenido del array
 const impresionDelArrayProductos = () => {
-
+  console.log(`Imprimiendo el array`);
+  
   for (let index = 0; index < arrayProductos.length; index++) {
-    console.log(` ${arrayProductos[index].toString()}`);
+    console.log(` ${arrayProductos[index].toString()} `);
   }
 };
 
@@ -80,14 +83,36 @@ const ordenarPorPrecio = () => {
     function (a, b) {
       return a.precio - b.precio;
 
+
     }
   );
+
+  console.log(`imprimiendo el array , pero segun su precio `);
+  
 
   for (let index = 0; index < arrayOrdenarProductoPorPrecio.length; index++) {
     console.log(`${arrayOrdenarProductoPorPrecio[index].toString()}  `);
 
   }
-
-
-
 }
+
+// Funcion ingreso e imprecion de datos del usuario
+
+const user = (nombre , apellido) => {
+  nombre = prompt(`Ingrese nombre`);
+  apellido = prompt(`Ingrese apellido`);
+
+  alert(`Hola ${nombre} ${apellido}`);
+}
+
+// Pidiendo datos al usuario
+user();
+
+//imprimiendo array
+impresionDelArrayProductos();
+
+//Ordenando el array del precio menor al mas caro 
+ordenarPorPrecio() ;
+
+
+

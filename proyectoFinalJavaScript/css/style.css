@@ -1,0 +1,21 @@
+/*Carpeta Base*/
+/*Reseteo los valores a 0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Efecto de scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/*Detalle con el overflow-x */
+body {
+  overflow-x: hidden;
+}
+
+/*Carpeta Complementos*/
+
+/*# sourceMappingURL=style.css.map */
